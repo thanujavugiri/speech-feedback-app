@@ -1,6 +1,5 @@
 absl-py==2.2.2
 astunparse==1.6.3
-audioop-lts==0.2.1
 audioread==3.0.1
 blinker==1.9.0
 cachetools==5.5.2
