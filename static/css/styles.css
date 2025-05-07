@@ -1,0 +1,74 @@
+/* Stylish animated background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(-45deg, #3e8e7e, #2a2f4f, #3e8e7e, #2a2f4f);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffeb3b;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f57c00;
+}
+
+.output-box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    border-left: 5px solid #00e676;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    white-space: pre-line;
+}
